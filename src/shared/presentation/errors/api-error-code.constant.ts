@@ -1,0 +1,14 @@
+/** Transport-level error codes used when the failure did not originate in the domain. */
+export const API_ERROR_CODE = {
+  VALIDATION_FAILED: 'VALIDATION_FAILED',
+  BAD_REQUEST: 'BAD_REQUEST',
+  NOT_FOUND: 'NOT_FOUND',
+  METHOD_NOT_ALLOWED: 'METHOD_NOT_ALLOWED',
+  PAYLOAD_TOO_LARGE: 'PAYLOAD_TOO_LARGE',
+  UNPROCESSABLE_ENTITY: 'UNPROCESSABLE_ENTITY',
+  CONFLICT: 'CONFLICT',
+  SERVICE_UNAVAILABLE: 'SERVICE_UNAVAILABLE',
+  INTERNAL_ERROR: 'INTERNAL_ERROR',
+} as const;
+
+export type ApiErrorCode = (typeof API_ERROR_CODE)[keyof typeof API_ERROR_CODE];

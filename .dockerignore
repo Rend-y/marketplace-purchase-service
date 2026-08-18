@@ -1,0 +1,16 @@
+node_modules
+dist
+coverage
+test
+.git
+.github
+.husky
+*.md
+!README.md
+.env
+.env.local
+Dockerfile
+docker-compose.yml
+eslint.config.mjs
+vitest.config.ts
+vitest.integration.config.ts
