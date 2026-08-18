@@ -1,4 +1,4 @@
-import { ConflictError, InvariantViolationError } from '../../../../shared/domain/errors';
+import { ConflictError, InvariantViolationError } from '@/shared/domain/errors';
 
 export const IDEMPOTENCY_ERROR_CODE = {
   REQUEST_IN_PROGRESS: 'IDEMPOTENT_REQUEST_IN_PROGRESS',

@@ -1,4 +1,4 @@
-import type { JsonObject } from '../../../../shared/types';
+import type { JsonObject } from '@/shared/types';
 
 export interface IdempotencyClaimParams {
   readonly id: string;
